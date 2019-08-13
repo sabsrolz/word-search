@@ -6,6 +6,8 @@ let wordProgress = [];
 let color;
 let randIndex = 0;
 let solved;
+let wrongGuesses = [];
+let guess;
 
 randIndex = Math.floor(Math.random() * colors.length);
 color = colors[randIndex];
@@ -19,3 +21,10 @@ function mystery(word) {
   }
   return wordProgress;
 }
+
+$(document).ready(function() {
+  $(document).keyup(function() {
+    guess = event.key;
+    console.log(guess);
+  });
+});
