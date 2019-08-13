@@ -11,28 +11,31 @@
       crossorigin="anonymous"
     />
     <title>Word Search</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
   <body>
+    <header><h1>Word Search</h1></header>
+
     <h1>Group 3 Word Guess</h1>
 
     <div class="row">
       <div class="col-md-12">
-        BLANK SPACES GOES HERE
+        <div id="progress"></div>
       </div>
     </div>
 
     <div class="row">
       <div class="col-md-6">
-        Number of Guesses Remaining
+        <div id="guesses"></div>
       </div>
       <div class="col-md-6">
-        Letters Guessed
+        <div id="wrongLetters"></div>
       </div>
     </div>
 
     <div class="row">
-      <p>Wins</p>
-      <p>Losses</p>
+      <p id="wins"></p>
+      <p id="losses"></p>
     </div>
 
     <script src="word_search.js"></script>
